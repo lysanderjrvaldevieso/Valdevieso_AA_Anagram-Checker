@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html>
+	
+		<head><title>Valdevieso_3rd Quarter_Anagram Checker</title></head>
+
+		<body>
+		
+		
+				
+			<script>
+				
+				var firstWord = prompt("Enter the first word: ");
+				var secondWord = prompt("Enter the second word: ");
+				
+				var newOne = firstWord.toLowerCase();
+				var newTwo = secondWord.toLowerCase();
+				
+				function anagram(newOne, newTwo){
+					
+						var newFirst = newOne.split("").sort().join("");
+						var newSecond = newTwo.split("").sort().join("");
+						
+						if(newFirst == newSecond){
+						
+							alert(firstWord + " " + "and" + " " + secondWord + " " + "are anagrams.");
+						
+						}
+						else {
+						
+							alert(firstWord + " " + "and" + " " + secondWord + " " + "are not anagrams.");
+							
+						}
+				
+					}
+					
+					if (newOne.length == newTwo.length){
+				
+						anagram(newOne, newTwo); 
+						
+					}
+					else {
+				
+						alert(firstWord + " " + "and" + " " + secondWord + " " + "are not anagrams.");
+				
+				    }
+				
+				
+			</script>
+			
+		</body>
+	
+	</html>
